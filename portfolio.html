@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <!-- Reset css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- bootstrap stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- custom stylings -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="fixed-top">
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="mx-auto">
+                <h1 class="navbar_header">Projects</h1>
+            </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <!-- Wrapping navigation dropdown so I can add margins or no margins on mobile -->
+            <div id="navbar_collapse_wrapper">
+                <div class="bg-dark p-4">
+                    <a href="./index.html" class="link_no_style btn btn-secondary btn-lg btn-block">About</a>
+                    <div class="link_no_style btn btn-secondary btn-lg btn-block disabled">Portfolio</div>
+                    <a href="./contact.html" class="link_no_style btn btn-secondary btn-lg btn-block">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <main class="container main_content_container border-right border-left pt-3">
+        <div class="row">
+            <!-- portfolio carousel of images -->
+            <div class="col-12 pl-5 pr-5">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/realm_roller_screenshot.jpg" class="d-block w-100 border"
+                                alt="shadow run react app">
+                            <figure>
+                                <div class="image_caption"><strong>Group Project:</strong> Table top campaign tools. Includes an NPC generator and 5th edition spell lookup
+                                    <br><a href="https://detanracnier.github.io/Project_01/">Deployed site</a>
+                                    <br><a href="https://github.com/detanracnier/Project_01">Github repository</a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/shadow_run_screenshot.jpg" class="d-block w-100 border"
+                                alt="shadow run react app">
+                            <figure>
+                                <div class="image_caption"><strong>Personal Project:</strong> app created to assist players in managing combat in the
+                                    table-top system shadowrun 3.0
+                                    <br><a href="http://spencerrosio.net/">Deployed site</a>
+                                    <br><a href="https://github.com/detanracnier/shadow_run_fixer">Github repository</a>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/weather_screenshot.jpg" class="d-block w-100 border"
+                                alt="weather dashboard api">
+                            <figure>
+                                <div class="image_caption"><strong>Weather Dashboard API:</strong> Weather dashboard using openweathers api to display location forcast
+                                    <br><a href="https://detanracnier.github.io/BC_11-7_Weather_Dashboard/">Deployed site</a>
+                                    <br><a href="https://github.com/detanracnier/BC_11-7_Weather_Dashboard">Github repository</a>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section_header">Accomplishments</h2>
+
+        <!-- accomplishment timeline -->
+        <!-- accomplishment -->
+        <div class="border p-3">
+            <div class="row">
+                <!-- Project Name -->
+                <div class="col-12"><h3 class="accomplishment_head">Google Action - You Choose Adventure</h3></div>
+            </div>
+            <div class="row">
+                <!-- Date completed -->
+                <div class="col-4"><span class="accomplishment_date pt-0">2020-09-30</span></div>
+                <!-- Languages Used -->
+                <div class="col-8">
+                    <span class="language_tag">Audio</span>
+                    <span class="language_tag">Animation</span>
+                </div>
+            </div>
+            <div class="row">
+                <!--Project Summary -->
+                <div class="col-12 body_text mt-4">Released 8 voice and touch interactive actions for Google touch screen and audio devices. These interactive adventures include professionally recorded audio and limited animation. Users can make choices with voice recognition or on screen touch points.</div>
+            </div>
+            <!-- Read More Button -->
+            <div class="row mt-2">
+                <div class="col-12">
+                    <button class="read_more_button" type="button" data-toggle="collapse"
+                        data-target="#google_action_rm" aria-controls="google_action_rm"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span>Read More</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <!--Read More -->
+                <div id="google_action_rm" class="col-12 body_text collapse">For this project we were requested to convert 8 of Capstones you choose adventure Alexa skills into Google actions with added visuals and touch screen capabilities. Working with Earplay developers we learned how to add animation capabilities through the Earplay platform. A challenge we overcame was figuring out how to create loti animation files and integrate their json exports. Analytics have been implemented to track users choices throughout the action.</div>
+            </div>
+
+
+        </div>
+
+        <!-- accomplishment -->
+        <div class="border p-3">
+            <div class="row">
+                <!-- Project Name -->
+                <div class="col-12"><h3 class="accomplishment_head">InDesign Export Scripts</h3></div>
+            </div>
+            <div class="row">
+                <!-- Date completed -->
+                <div class="col-4"><span class="accomplishment_date pt-0">2019-10-15</span></div>
+                <!-- Languages Used -->
+                <div class="col-8"><span class="language_tag">Javascript</span></div>
+            </div>
+            <div class="row">
+                <!--Project Summary -->
+                <div class="col-12 body_text mt-4">These utility scripts were created to combine several export and file renaming processes for publishers preparing their products for print.</div>
+            </div>
+            <!-- Read More Button -->
+            <div class="row mt-2">
+                <div class="col-12">
+                    <button class="read_more_button" type="button" data-toggle="collapse"
+                        data-target="#indesign_scripts_rm" aria-controls="indesign_scripts_rm"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span>Read More</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <!--Read More -->
+                <div id="indesign_scripts_rm" class="col-12 body_text collapse">Users were having to perform several exports to prepare files for multiple formats. This included having to rename files and incerting cover pages. These utility scripts pull in users export presets and allows the user to specify multiple exports. Users can specify multiple ISBNs for files to be renamed to. User inputs are saved within the InDesign file for future use. Upon export files are renamed and mover into created directories in an agreed upon file structure.</div>
+            </div>
+        </div>
+
+        <!-- accomplishment -->
+        <div class="border p-3">
+            <div class="row">
+                <!-- Project Name -->
+                <div class="col-12"><h3 class="accomplishment_head">Alexa Skills - You Choose Adventure</h3></div>
+            </div>
+            <div class="row">
+                <!-- Date completed -->
+                <div class="col-4"><span class="accomplishment_date pt-0">2017-12-15</span></div>
+                <!-- Languages Used -->
+                <div class="col-8"><span class="language_tag">Audio</span></div>
+            </div>
+            <div class="row">
+                <!--Project Summary -->
+                <div class="col-12 body_text mt-4">Released 50 voice interactive skills for the Amazon Alexa device. Stories are professionally recorded and respond to users voice to make choices to advance the story.</div>
+            </div>
+            <!-- Read More Button -->
+            <div class="row mt-2">
+                <div class="col-12">
+                    <button class="read_more_button" type="button" data-toggle="collapse"
+                        data-target="#alexa_skills_rm" aria-controls="alexa_skills_rm"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span>Read More</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <!--Read More -->
+                <div id="alexa_skills_rm" class="col-12 body_text collapse">I worked with a team to fulfill a request to convert 50 chose your own adventure titles into Alexa skills. The 50 titles selected were professionally recorded. Integrating the skills into Amazon's console required creating language models, designating choice paths, and setting up interaction variables to allow bookmarks, purchasing, and tracking which title the user has active.</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-dark">
+        <div class="copyright">©2020</div>
+    </footer>
+
+    <!-- Java script - Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

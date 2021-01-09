@@ -1,0 +1,98 @@
+body {
+    background-color: #dff0f5;
+}
+
+
+/* ------------------Navigation ----------------- */
+#navbar_collapse_wrapper {
+    margin-right: 70%;
+}
+
+.navbar_header {
+    margin: 0;
+    padding: 0;
+    color: #d3d3d3;
+    font-size: 1.5em;
+}
+
+.link_no_style:hover {
+    text-decoration: none;
+}
+/* ----------------Main content ------------------- */
+.main_content_container {
+    /* Margin-top to push content down to line up with navbar */
+    margin-top: 57px;
+    margin-bottom: 25px;
+    /* Set content container height to 100% of the page */
+    min-height: calc(100vh - 57px - 25px);
+    background-color: #ffffff;
+}
+
+.section_header {
+    font-family: 'Archivo', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#email_icon {
+    max-width: 100px;
+    height: auto;
+}
+
+.image_caption {
+    padding-top:5px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.icon {
+    max-width: 20px;
+    max-height: 20px;
+
+}
+
+#social_media_links {
+    text-align: center;
+}
+
+.body_text {
+    font-family: 'Quicksand', sans-serif;
+    text-indent: 1em;
+}
+
+/* -----------------footer---------------------- */
+footer {
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    bottom: 0;
+}
+
+.copyright {
+    color: #ffffff;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 575px or less.
+*/
+@media screen and (max-width: 575px) {
+    /* make navbar buttons span the entire width of page */
+    #navbar_collapse_wrapper {
+        margin-right: 0;
+    }
+
+    #social_media_links li {
+        display: inline;
+    }
+
+    /* keep images small for mobile */
+    #about_me_image {
+        max-width: 300px;
+    }
+    #email_icon {
+        max-width: 50px;
+    }
+}

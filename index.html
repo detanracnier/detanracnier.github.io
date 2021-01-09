@@ -1,16 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About me</title>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <!-- Reset css -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- bootstrap stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- custom stylings -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Portfolio</h1>
-    </header>
+    <!-- Navigation -->
+    <div class="fixed-top">
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="mx-auto">
+                <h1 class="navbar_header">Web Developer</h1>
+            </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <!-- Wrapping navigation dropdown so I can add margins or no margins on mobile -->
+            <div id="navbar_collapse_wrapper">
+                <div class="bg-dark p-4">
+                    <div class="link_no_style btn btn-secondary btn-lg btn-block disabled">About</div>
+                    <a href="./portfolio.html" class="link_no_style btn btn-secondary btn-lg btn-block">Portfolio</a>
+                    <a href="./contact.html" class="link_no_style btn btn-secondary btn-lg btn-block">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me -->
+    <main class="container main_content_container border-right border-left pt-3">
+        <div class="row">
+            <!-- About me Image -->
+            <div class="col-12 col-sm-4">
+                <img id="about_me_image" src="./images/About_me_photo.jpg" class="img-fluid rounded mx-auto d-block"
+                    alt="Spencer Rosio gazes longingly off screen...">
+                <!-- Image caption -->
+                <div class="text-center">Spencer Rosio</div>
+                <hr class="p-0 m-0">
+                 <!-- social media links -->
+                <div>
+                    <ul id="social_media_links">
+                        <li>
+                            <a href="https://github.com/detanracnier">
+                            <img class="icon" src="./images/icons/GitHub-Mark-32px.png" alt="github icon">
+                            <span class="align-middle"> Github</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/spencer-rosio-14300714/">
+                            <img class="icon" src="./images/icons/linked-in.png" alt="linked-in icon">
+                            <span class="align-middle"> Linked In</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- A brief paragraph about me -->
+            <div class="col-12 col-sm-8">
+                <h2 class="section_header">A little about me...</h2>
+                <p class="body_text">I am an experianced digital media publisher working for a top educational company.
+                    I have created a variety of media ranging from print, epub, mobi, interactive articles,
+                    and voice first interactive skills for the Amazon alexa and Google nest.</p>
+                <p class="body_text">I am very passionate about problem solving and exploring new ways to solve old problems.
+                    I've used these skills to write scripts, develop automation, and pioneer new systems to
+                    increase efficiency for a variety of tasks.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-dark">
+        <div class="copyright">©2020</div>
+    </footer>
+
+    <!-- Java script - Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

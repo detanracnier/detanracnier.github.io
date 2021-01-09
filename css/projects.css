@@ -1,0 +1,38 @@
+.accomplishment_head {
+    font-family: 'Concert One', cursive;
+    font-size: 1.8em;
+}
+
+.accomplishment_date {
+    color: #414040;
+    font-size: 1em;
+}
+
+.read_more_button {
+    border:none;
+    background-color: #ffffff;
+    color: grey;
+}
+
+.language_tag {
+    border-radius: 5px;
+    margin: 0px 3px;
+    float: right;
+    padding: 0px 10px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+@media screen and (max-width: 575px) {
+    .accomplishment_head {
+        font-size: 1em;
+    }
+    .accomplishment_date {
+        font-size: 0.8em;
+    }
+    .language_tag {
+        font-size: 0.6em;
+        margin: 0px 1px;
+    }
+}
